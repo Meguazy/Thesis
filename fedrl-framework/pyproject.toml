@@ -1,0 +1,19 @@
+[project]
+name = "fedrl-framework"
+version = "0.1.0"
+description = "Federated Reinforcement Learning Framework"
+authors = [{name = "Francesco Finucci", email = "francesco.finucci@studenti.unicam.it"}]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "websockets>=13.1",
+    "torch>=2.9.0.dev20250720",
+    "torchaudio>=2.8.0.dev20250720",
+    "torchvision>=0.24.0.dev20250720",
+    "python-chess>=1.999",
+]
+
+[tool.uv]
+    index-strategy = "unsafe-best-match"
+    extra-index-url = ["https://download.pytorch.org/whl/nightly/cu128"]
